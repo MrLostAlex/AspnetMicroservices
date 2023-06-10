@@ -5,7 +5,7 @@ namespace Catalog.API.Data
 {
     public static class CatalogContextSeed
     {
-        public static void SeedDate(IMongoCollection<Product> products)
+        public static void SeedData(IMongoCollection<Product> products)
         {
             if (products.Find(p => true).Any()) return;
 
